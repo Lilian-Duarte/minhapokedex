@@ -1,0 +1,189 @@
+.containerPopup {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,.8);
+    display: none;
+}
+
+.popup {
+    position:absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    height: 80%;
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 2rem;
+    display: none;
+}
+
+.popup .pokemonsDetails {
+    list-style: none;
+    padding: 0.1rem;
+    margin: 0 auto;
+    display: inherit;
+    border-radius: 1rem;
+    height: 100%;
+    background-color: aliceblue;
+}
+
+.dbuttonclose {
+    font-size: 0.8rem;
+    color: black;
+    border: none;
+    border-radius: 1rem;
+    text-align: right;
+    padding: .25rem 1rem .25rem 1rem;
+}
+
+.dbuttonclose:hover{
+    cursor: pointer;
+}  
+
+.dpokemon {
+    color: white;
+    border-radius: 1rem;
+    display: inherit;
+}
+
+.dpokemon .dnumber{
+    font-size: 1.5rem;
+    margin: 0 auto;
+    color: gainsboro;
+    text-align:center;
+    padding: .5rem;
+}
+
+.dpokemon .dname {
+    margin: 0.25rem .25rem;
+    font-size: 3rem;
+    text-transform: capitalize;
+    background-color: transparent;
+    border: none;
+    color: white;
+    text-align: center;
+}
+
+.dpokemon .dtypes {
+    padding: 0;
+    margin-top: 0.5rem;
+    list-style: none;
+    display: flex;
+}
+
+.dpokemon .dtypes .dtype{
+    font-size: .825rem;
+    padding: .25rem .5rem;
+    margin: .125rem;
+    border-radius: 1rem;
+    filter: brightness(1.2);
+    text-align: center;
+}
+
+.dpokemon .ddetail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dpokemon .dimg {
+    display: flex;
+    max-width: 100%;
+    height: 70px;
+    justify-content: center;
+
+}
+
+.dcharacts {
+    margin: 1rem 0 0 0;
+    font-size: 0.85rem;
+    background-color: aliceblue;
+    border: none;
+    color: #505050;
+    text-align: center;
+    border-radius: 2rem 2rem 0 0;
+    padding: .7rem;
+}
+.contentdetail{
+    justify-content: center;
+    margin: 0 auto;
+    background-color: transparent;
+}
+.contentdabilities{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem;
+    margin: 2rem auto;
+}
+
+.dabilities{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+}
+.dabilities .dabilitiesname{
+    padding: 0;
+    margin-top: 0.5rem;
+    list-style: none;
+    display: flex;
+}
+
+.dability{
+    font-size: .825rem;
+    padding: .25rem .5rem;
+    margin: .125rem;    
+    border-radius: 1rem;
+    filter: brightness(1.2);
+    text-align: center;
+}
+
+.dstats{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2rem auto;
+    
+}
+.dstats .stats {
+    list-style: none;
+    display: grid;
+    grid-template-rows: auto;
+    gap: 0.5rem;
+    text-align: left;
+    margin: 0 auto;
+    width: max-content;
+}
+
+.dstats .statsolist {
+    list-style: none;
+    display: grid;
+    grid-template-rows: auto;
+    gap: 0.5rem;
+    padding: 0 2.5rem 0 0;
+}
+
+@media screen and (min-width: 992px){
+    .popup{
+        width: 30%;
+        height: 80%;
+    }
+}
+@media screen and (576px <= width < 992px ){
+    .popup{
+        width: 90%;
+        height: 70%;
+    }
+}
+@media screen and (380px < width<576px){
+    .popup{
+        width: 90%;
+        height: 70%;
+    }
+}
